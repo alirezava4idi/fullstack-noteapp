@@ -22,6 +22,9 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    p{
+        word-wrap: break-word;
+    }
     #date{
         font-size: 14px;
         font-style: italic;
