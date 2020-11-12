@@ -1,0 +1,33 @@
+POST http://localhost:4000/api/user/register
+Content-Type: application/json
+
+{
+    "email": "alirezavahidi123@gmail.com", 
+    "password": "alireza1 "
+}
+
+###
+
+POST http://localhost:4000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "alirezavahidi123@gmail.com",
+    "password": "alireza1"
+}
+
+###
+
+POST http://localhost:4000/api/user/token
+Cookie: "SSID": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhbGlyZXphdmFoaWRpMTIzQGdtYWlsLmNvbSIsImlhdCI6MTYwNDg1NDQ2NCwiZXhwIjoxNjA1NDU5MjY0fQ.nSlwmC2rNai1WAugrbiVoeA536_lRB6Cd67K1jxySX0
+
+
+###
+GET http://localhost:4000/api/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjA0OTMyMDAyLCJleHAiOjE2MDQ5MzIwNDd9.yt9LfEKhtdBvLpXhg0gvYtyDjbf7yXQxqXsPWOygRxY
+
+###
+
+DELETE http://localhost:4000/api/user/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjA0OTMyMDAyLCJleHAiOjE2MDQ5MzIwNDd9.yt9LfEKhtdBvLpXhg0gvYtyDjbf7yXQxqXsPWOygRxY
+
